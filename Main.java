@@ -38,28 +38,28 @@ public class Main {
         if (favColor.equals("blue") && favSeason.equals("fall")){
             pet="alligator";
             }
-        if (favColor.equals("blue") && favSeason.equals("spring")){
+        else if (favColor.equals("blue") && favSeason.equals("spring")){
             pet="ostrich";
             }
-        if (favColor.equals("green") && (consonant==true) && favSeason.equals("winter")){
+        else if (favColor.equals("green") && (consonant==true) && favSeason.equals("winter")){
             pet="giraffe";
          }
-        if (favColor.equals("green") && !favSeason.equals("fall") && !alreadyHave.equals("giraffe")){
+        else if (favColor.equals("green") && !favSeason.equals("fall") && !alreadyHave.equals("giraffe")){
             pet="dog";
             }
-        if (favColor.equals("red")){
+        else if (favColor.equals("red") && (consonant==false)){
           pet="panda";
-        } else if (consonant==false) {
+        } else if ((consonant==true) && (favColor.equals("red"))){
             pet="porcupine";
         }
 
-        if (favSeason.equals("summer") && !alreadyHave.equals("dog") && !alreadyHave.equals("panda") && !alreadyHave.equals("porcupine")){
-            pet="ponie";
+        else if (favSeason.equals("summer") && !alreadyHave.equals("dog") && !alreadyHave.equals("panda") && !alreadyHave.equals("porcupine")){
+            pet="pony";
             }
-        if ((consonant==true) && (favColor.equals("blue")) && (!favSeason.equals("fall")) && (!favSeason.equals("summer")) && (!alreadyHave.equals("ostrich"))){
+        else if ((consonant==true) && (favColor.equals("blue")) && (!favSeason.equals("fall")) && (!favSeason.equals("summer")) && (!alreadyHave.equals("ostrich"))){
            pet="axolotl";
          }
-        if (pet.equals("none")){
+        else if (pet.equals("none")){
             pet="pet rock";
             }
         String firstLetter = pet.substring(0, 1);
